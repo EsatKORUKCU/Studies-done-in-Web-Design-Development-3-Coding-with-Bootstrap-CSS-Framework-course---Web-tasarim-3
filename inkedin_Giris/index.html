@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/stil.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css">
+</head>
+
+<body >
+	<header class="container-fluid">
+		<div class="container-lg">
+			<nav class="navbar navbar-expand navbar-light menubar">
+				<a class="navbar-brand" href="javascript:void(0)">
+				Linked<i class="fa-brands fa-linkedin"></i></a>
+						 <div class="collapse navbar-collapse" id="navbarNav">
+					  <ul class="navbar-nav text-center">
+						<li class="nav-item">
+						  <a class="nav-link " aria-current="page" href="#">
+						  <i class="fa-solid fa-compass"></i> <br>
+						  Keşfet</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">
+						  <i class="fa-solid fa-user-lock"></i> <br>
+						  Kişiler</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">
+						  <i class="fa-solid fa-camera-retro"></i> <br>
+						  Ögrenme</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link " href="#">
+						  <i class="fa-solid fa-briefcase"></i> <br>
+						  İş alanları</a>
+						</li>
+					  </ul>
+					</div>
+				<div class="uyegiris">
+					<button type="button" class="btn btn-outline-light rounded-5 text-dark">Hemen Katıl</button>
+					<button type="button" class="btn btn-outline-primary rounded-5"
+					data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Oturum Aç</button>
+					
+				</div>
+			</nav>
+		</div>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		  <div class="offcanvas-header">
+			<h2 class="offcanvas-title" id="offcanvasRightLabel">Oturum Açın</h2>
+			  <p class ="text-muted">Profesyonel dünyanızla ilgili güncel haberler sahip olun</p>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		  </div>
+		  <div class="offcanvas-body">
+				<form class="ui large form" style="margin: 40px">
+						<div class="form-floating mb-3">
+						  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+						  <label for="floatingInput">Email address</label>
+						</div>
+						<div class="form-floating">
+						  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+						  <label for="floatingPassword">Password</label>
+						</div> 
+					  
+					  <div class="ui stacked segment">
+						<div class="field">
+						  <div class="ui icon input"> <input type="text" name="email" placeholder="E-mail address" /> </div>
+						</div>
+						<div class="field">
+						  <div class="ui icon input"> <input type="password" id="password" name="password" placeholder="Password" /> <i class="circular eye link icon" onclick="togglePassword()"></i> </div>
+						</div>
+						<div class="ui fluid large teal submit button">Login</div>
+					  </div>
+					</form>
+		  </div>
+		</div>
+	</header>
+	<article class="container-lg ">
+		<div class="row">
+			<div class="col-md-6">
+			<h2 class="display-3 pt-lg-5 p-5" style="color: #8f5849">Profesyonel topluluğunuza hoş geldiniz!</h2>
+				<div class="accordion accordion-flush pt-2" id="accordionFlushExample">
+						  <div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingOne">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+							İş ilanı arayın
+							  </button>
+							</h2>
+							<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+							</div>
+						  </div>
+						  <div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingTwo">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+         						 Tanıdığınız bir kişiyi bulun
+							  </button>
+							</h2>
+							<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+							  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+							</div>
+						  </div>
+						  <div class="accordion-item">
+							<h2 class="accordion-header" id="flush-headingThree">
+							  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+								Yeni Bir Yetenek Ögrenme
+							  </button>
+							</h2>
+							<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+							  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+							</div>
+						  </div>
+						</div>
+			</div>
+			<div class="col-md-6 resim">
+			<!--	<img src="img/main_bg01.png" class="w-100" alt="main01">-->
+				<img src="img/main_bg01.png" alt="main01">
+			</div>
+		</div>
+	</article>
+
+	
+<script src="js/javascript.js"></script>	
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
