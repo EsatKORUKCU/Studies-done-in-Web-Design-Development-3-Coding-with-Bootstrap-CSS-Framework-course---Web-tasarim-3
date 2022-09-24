@@ -1,0 +1,12 @@
+body {
+	background-image: url( file:///Z:/esat/web3/ders03/fotograflar/pexels-pixabay-235621.jpg);
+	background-size:cover;
+}
+.fa-ellipsis-vertical{
+	letter-spacing: -2px;
+}
+.active a{
+	background-color: maroon;
+	color: aqua;
+	
+}
